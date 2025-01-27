@@ -1,0 +1,17 @@
+{
+  "name": "parabank_cp",
+  "version": "1.0.0",
+  "main": "cypress.config.js",
+  "scripts": {
+    "cy:open": "cypress open",
+    "test": "cypress run --spec cypress/e2e/all.cy.js"
+  },
+  "keywords": [],
+  "author": "Marcos Saliture",
+  "license": "MIT",
+  "description": "automation of test case scenarios for the aforementioned bank services website",
+  "devDependencies": {
+    "cypress": "^13.15.2",
+    "cypress-xpath": "^2.0.1"
+  }
+}
