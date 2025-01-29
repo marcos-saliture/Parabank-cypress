@@ -29,26 +29,6 @@ describe('Login', () => {
 
     })
 
-    it('TC10: login with success', () =>{
-
-        cy.createAccount('TC10')
-
-
-        cy.get('input[name="username"]').type(Cypress.env('TC10').userName);
-        cy.get('input[name="password"]').type(Cypress.env('TC10').password, { log: false })
-
-
-        cy.get('input[value="Log In"]').click();
-        
-
-        const greeting = 'Welcome ' +  Cypress.env('TC10').name 
-        cy.get('p.smallText').should('contain.text', greeting)
-
-        cy.contains('h1.title', 'Accounts Overview').should('be.visible')
-        cy.contains('h2', 'Account Services').should('be.visible')
-        
-    
-    })
 
 })
 

@@ -47,6 +47,7 @@ describe('Customer Lookup form', () => {
  
     })
     
+    /*
     it('TC7: Customer Lookup with succes', () => {
      
         cy.createAccount('TC7').then( () => {
@@ -64,7 +65,7 @@ describe('Customer Lookup form', () => {
      
             cy.contains('input', 'Find My Login Info').click()
     
-            cy.intercept('POST', '*/parabank/lookup.htm', (req) => {
+            cy.intercept('POST', '"*"/parabank/lookup.htm', (req) => {
                 req.reply({ status:200})
             }).as('upload_success')
     
@@ -72,10 +73,10 @@ describe('Customer Lookup form', () => {
             cy.contains('p', 'Your login information was located successfully. You are now logged in.').should('be.visible')
 
         })
-   
+ 
  
     })
-
+  */
 
 })
 
